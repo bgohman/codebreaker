@@ -14,7 +14,7 @@ Feature: code-breaker submits guess
 
   Scenarios: no numbers correct
 	| code | guess | mark |
-	| 1234 | 5555  |      |
+	| 1234 | 5555  | 0    |
   Scenarios: 1 number correct
 	| code | guess | mark |
 	| 1234 | 1555  | +    |
@@ -27,13 +27,13 @@ Feature: code-breaker submits guess
   Scenarios: 3 numbers correct
 	| code | guess | mark |
 	| 1234 | 1235  | +++  |
-	| 1234 | 1253  | ++-  |
+	| 1234 | 1354  | ++-  |
 	| 1234 | 1523  | +--  |
 	| 1234 | 5321  | ---  |
   Scenarios: all numbers correct
 	| code | guess | mark |
 	| 1234 | 1234  | ++++ |
-	| 1234 | 1243  | ++-- |
+	| 1234 | 2134  | ++-- |
 	| 1234 | 1423  | +--- |
 	| 1234 | 4321  | ---- |
 
